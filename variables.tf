@@ -24,7 +24,7 @@ variable "subject" {
   type = object({
     kind      = optional(string, "ServiceAccount")
     name      = string
-    namespace = string
+    namespace = optional(string)
   })
   default = null
 }
